@@ -1,191 +1,77 @@
-/* Modern Reset */
-* {
-    margin: 0;
-    padding: 0;
-    box-sizing: border-box;
-}
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>iPromax Communities</title>
+    <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@400;500;600;700&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
 
-body {
-    font-family: 'Poppins', sans-serif;
-    /* Soft, premium gradient background */
-    background: linear-gradient(135deg, #e0eafc 0%, #cfdef3 100%);
-    display: flex;
-    justify-content: center;
-    align-items: center;
-    min-height: 100vh;
-    padding: 20px;
-    position: relative;
-    overflow: hidden;
-}
+    <div class="bg-shape shape1"></div>
+    <div class="bg-shape shape2"></div>
 
-/* Subtle background animations */
-.bg-shape {
-    position: absolute;
-    border-radius: 50%;
-    filter: blur(60px);
-    z-index: 0;
-    opacity: 0.6;
-}
+    <div class="card">
+        <div class="header">
+            <div class="brand-icon">
+                <img src="logo.png" alt="iPromax Logo">
+            </div>
+            
+            <h1>iPromax</h1>
+            <p class="tagline">Premium Gadget Repair Center<br><span class="locations">Kochi & Trivandrum</span></p>
+        </div>
 
-.shape1 {
-    width: 300px;
-    height: 300px;
-    background: #4ade80; /* WhatsApp Green hint */
-    top: -100px;
-    left: -100px;
-    animation: float 6s ease-in-out infinite;
-}
+        <p class="instruction">Join Ipromax Community:</p>
 
-.shape2 {
-    width: 400px;
-    height: 400px;
-    background: #60a5fa; /* Soft blue hint */
-    bottom: -150px;
-    right: -150px;
-    animation: float 8s ease-in-out infinite reverse;
-}
+        <a href="https://chat.whatsapp.com/CdqD4SPkdkrHpPp7ZcLurc?mode=gi_t" class="btn btn-whatsapp" target="_blank">
+            <svg class="btn-icon" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 448 512" fill="currentColor"><path d="M380.9 97.1C339 55.1 283.2 32 223.9 32c-122.4 0-222 99.6-222 222 0 39.1 10.2 77.3 29.6 111L0 480l117.7-30.9c32.4 17.7 68.9 27 106.1 27h.1c122.3 0 224.1-99.6 224.1-222 0-59.3-25.2-115-67.1-157zm-157 341.6c-33.2 0-65.7-8.9-94-25.7l-6.7-4-69.8 18.3L72 359.2l-4.4-7c-18.5-29.4-28.2-63.3-28.2-98.2 0-101.7 82.8-184.5 184.6-184.5 49.3 0 95.6 19.2 130.4 54.1 34.8 34.9 56.2 81.2 56.1 130.5 0 101.8-84.9 184.6-186.6 184.6zm101.2-138.2c-5.5-2.8-32.8-16.2-37.9-18-5.1-1.9-8.8-2.8-12.5 2.8-3.7 5.6-14.3 18-17.6 21.8-3.2 3.7-6.5 4.2-12 1.4-32.6-16.3-54-29.1-75.5-66-5.7-9.8 5.7-9.1 16.3-30.3 1.8-3.7 .9-6.9-.5-9.7-1.4-2.8-12.5-30.1-17.1-41.2-4.5-10.8-9.1-9.3-12.5-9.5-3.2-.2-6.9-.2-10.6-.2-3.7 0-9.7 1.4-14.8 6.9-5.1 5.6-19.4 19-19.4 46.3 0 27.3 19.9 53.7 22.6 57.4 2.8 3.7 39.1 59.7 94.8 83.8 35.2 15.2 49 16.5 66.6 13.9 10.7-1.6 32.8-13.4 37.4-26.4 4.6-13 4.6-24.1 3.2-26.4-1.3-2.5-5-3.9-10.5-6.6z"/></svg>
+            <span>offical Group</span>
+        </a>
 
-@keyframes float {
-    0% { transform: translateY(0px); }
-    50% { transform: translateY(30px); }
-    100% { transform: translateY(0px); }
-}
+        <a href="https://chat.whatsapp.com/L1p4GygpCoOFSNIW0HX6Q0?mode=gi_t" class="btn btn-whatsapp" target="_blank">
+            <svg class="btn-icon" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 448 512" fill="currentColor"><path d="M380.9 97.1C339 55.1 283.2 32 223.9 32c-122.4 0-222 99.6-222 222 0 39.1 10.2 77.3 29.6 111L0 480l117.7-30.9c32.4 17.7 68.9 27 106.1 27h.1c122.3 0 224.1-99.6 224.1-222 0-59.3-25.2-115-67.1-157zm-157 341.6c-33.2 0-65.7-8.9-94-25.7l-6.7-4-69.8 18.3L72 359.2l-4.4-7c-18.5-29.4-28.2-63.3-28.2-98.2 0-101.7 82.8-184.5 184.6-184.5 49.3 0 95.6 19.2 130.4 54.1 34.8 34.9 56.2 81.2 56.1 130.5 0 101.8-84.9 184.6-186.6 184.6zm101.2-138.2c-5.5-2.8-32.8-16.2-37.9-18-5.1-1.9-8.8-2.8-12.5 2.8-3.7 5.6-14.3 18-17.6 21.8-3.2 3.7-6.5 4.2-12 1.4-32.6-16.3-54-29.1-75.5-66-5.7-9.8 5.7-9.1 16.3-30.3 1.8-3.7 .9-6.9-.5-9.7-1.4-2.8-12.5-30.1-17.1-41.2-4.5-10.8-9.1-9.3-12.5-9.5-3.2-.2-6.9-.2-10.6-.2-3.7 0-9.7 1.4-14.8 6.9-5.1 5.6-19.4 19-19.4 46.3 0 27.3 19.9 53.7 22.6 57.4 2.8 3.7 39.1 59.7 94.8 83.8 35.2 15.2 49 16.5 66.6 13.9 10.7-1.6 32.8-13.4 37.4-26.4 4.6-13 4.6-24.1 3.2-26.4-1.3-2.5-5-3.9-10.5-6.6z"/></svg>
+            <span>Ipromax Family</span>
+        </a>
 
-/* Glass-like Card Design */
-.card {
-    background: rgba(255, 255, 255, 0.95);
-    backdrop-filter: blur(10px);
-    padding: 40px 30px;
-    border-radius: 28px;
-    box-shadow: 0 20px 40px rgba(0,0,0,0.08), 
-                inset 0 0 0 1px rgba(255,255,255,0.5);
-    text-align: center;
-    max-width: 380px;
-    width: 100%;
-    z-index: 1;
-    position: relative;
-    transform: translateY(20px);
-    animation: slideUp 0.6s ease-out forwards;
-}
+        <a href="https://www.instagram.com/ipromaxindia" class="btn btn-instagram" target="_blank">
+            <svg class="btn-icon" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 448 512" fill="currentColor"><path d="M224.1 141c-63.6 0-114.9 51.3-114.9 114.9s51.3 114.9 114.9 114.9S339 319.5 339 255.9 287.7 141 224.1 141zm0 189.6c-41.1 0-74.7-33.5-74.7-74.7s33.5-74.7 74.7-74.7 74.7 33.5 74.7 74.7-33.6 74.7-74.7 74.7zm146.4-194.3c0 14.9-12 26.8-26.8 26.8-14.9 0-26.8-12-26.8-26.8s12-26.8 26.8-26.8 26.8 12 26.8 26.8zm76.1 27.2c-1.7-35.9-9.9-67.7-36.2-93.9-26.2-26.2-58-34.4-93.9-36.2-37-2.1-147.9-2.1-184.9 0-35.8 1.7-67.6 9.9-93.9 36.1s-34.4 58-36.2 93.9c-2.1 37-2.1 147.9 0 184.9 1.7 35.9 9.9 67.7 36.2 93.9s58 34.4 93.9 36.2c37 2.1 147.9 2.1 184.9 0 35.9-1.7 67.7-9.9 93.9-36.2 26.2-26.2 34.4-58 36.2-93.9 2.1-37 2.1-147.8 0-184.8zM398.8 388c-7.8 19.6-22.9 34.7-42.6 42.6-29.5 11.7-99.5 9-132.1 9s-102.7 2.6-132.1-9c-19.6-7.8-34.7-22.9-42.6-42.6-11.7-29.5-9-99.5-9-132.1s-2.6-102.7 9-132.1c7.8-19.6 22.9-34.7 42.6-42.6 29.5-11.7 99.5-9 132.1-9s102.7-2.6 132.1 9c19.6 7.8 34.7 22.9 42.6 42.6 11.7 29.5 9 99.5 9 132.1s2.7 102.7-9 132.1z"/></svg>
+            <span>Follow on Instagram</span>
+        </a>
 
-@keyframes slideUp {
-    to { transform: translateY(0); opacity: 1; }
-    from { transform: translateY(30px); opacity: 0; }
-}
+        <a href="https://www.facebook.com/ipromaxindia" class="btn btn-facebook" target="_blank">
+            <svg class="btn-icon" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 320 512" fill="currentColor"><path d="M279.14 288l14.22-92.66h-88.91v-60.13c0-25.35 12.42-50.06 52.24-50.06h40.42V6.26S260.43 0 225.36 0c-73.22 0-121.08 44.38-121.08 124.72v70.62H22.89V288h81.39v224h100.17V288z"/></svg>
+            <span>Like on Facebook</span>
+        </a>
 
-/* Header Styling */
-.header {
-    margin-bottom: 30px;
-}
+        <a href="https://g.page/r/CeXNFkPmVNljEBE/review" class="btn btn-google" target="_blank">
+            <svg class="btn-icon" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 488 512" fill="currentColor"><path d="M488 261.8C488 403.3 391.1 504 248 504 110.8 504 0 393.2 0 256S110.8 8 248 8c66.8 0 123 24.5 166.3 64.9l-67.5 64.9C258.5 52.6 94.3 116.6 94.3 256c0 86.5 69.1 156.6 153.7 156.6 98.2 0 135-70.4 140.8-106.9H248v-85.3h236.1c2.3 12.7 3.9 24.9 3.9 41.4z"/></svg>
+            <span>Review For Trivandrum</span>
+        </a>
+<a href="https://g.page/r/CVYRNMOA0WU4EBM/review" class="btn btn-google" target="_blank">
+            <svg class="btn-icon" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 488 512" fill="currentColor"><path d="M488 261.8C488 403.3 391.1 504 248 504 110.8 504 0 393.2 0 256S110.8 8 248 8c66.8 0 123 24.5 166.3 64.9l-67.5 64.9C258.5 52.6 94.3 116.6 94.3 256c0 86.5 69.1 156.6 153.7 156.6 98.2 0 135-70.4 140.8-106.9H248v-85.3h236.1c2.3 12.7 3.9 24.9 3.9 41.4z"/></svg>
+            <span>Review For Kochi</span>
+        </a>
 
-.brand-icon {
-    width: 72px;
-    height: 72px;
-    background: linear-gradient(135deg, #1e293b, #0f172a);
-    border-radius: 20px;
-    margin: 0 auto 20px;
-    display: flex;
-    align-items: center;
-    justify-content: center;
-    box-shadow: 0 10px 20px rgba(15, 23, 42, 0.15);
-}
 
-.brand-icon svg {
-    width: 36px;
-    height: 36px;
-}
+        <div class="footer">
+            <p>Guaranteed Trusted Repair for Apple, OnePlus, Pixel & More.</p>
+        </div>
+    </div>
 
-h1 {
-    color: #1e293b;
-    font-size: 26px;
-    font-weight: 700;
-    margin-bottom: 8px;
-    letter-spacing: -0.5px;
-}
+    <audio id="clickSound" src="click.mp3"></audio>
 
-.tagline {
-    color: #64748b;
-    font-size: 14px;
-    font-weight: 500;
-    line-height: 1.4;
-}
+    <script>
+        const buttons = document.querySelectorAll('.btn');
+        const clickAudio = document.getElementById('clickSound');
 
-.locations {
-    font-size: 12px;
-    color: #94a3b8;
-    text-transform: uppercase;
-    letter-spacing: 1px;
-    font-weight: 600;
-    display: inline-block;
-    margin-top: 4px;
-}
+        buttons.forEach(button => {
+            button.addEventListener('click', () => {
+                clickAudio.currentTime = 0;
+                clickAudio.play();
+            });
+        });
+    </script>
 
-.instruction {
-    color: #475569;
-    font-size: 15px;
-    margin-bottom: 20px;
-    font-weight: 500;
-}
-
-/* Button Styling */
-.btn {
-    display: flex;
-    align-items: center;
-    justify-content: center;
-    gap: 12px;
-    width: 100%;
-    padding: 18px;
-    margin-bottom: 16px;
-    border-radius: 16px;
-    text-decoration: none;
-    font-weight: 600;
-    font-size: 16px;
-    transition: all 0.3s cubic-bezier(0.4, 0, 0.2, 1);
-    border: none;
-    cursor: pointer;
-}
-
-.btn-icon {
-    width: 24px;
-    height: 24px;
-}
-
-/* Primary WhatsApp Button */
-.btn-whatsapp {
-    background: linear-gradient(135deg, #25D366, #128C7E);
-    color: white;
-    box-shadow: 0 8px 20px rgba(37, 211, 102, 0.25);
-}
-
-.btn-whatsapp:hover {
-    transform: translateY(-3px);
-    box-shadow: 0 12px 25px rgba(37, 211, 102, 0.35);
-}
-
-/* Secondary WhatsApp Button */
-.btn-whatsapp-alt {
-    background: white;
-    color: #128C7E;
-    border: 2px solid #25D366;
-    box-shadow: 0 4px 15px rgba(0,0,0,0.05);
-}
-
-.btn-whatsapp-alt:hover {
-    background: #f0fdf4;
-    transform: translateY(-3px);
-    box-shadow: 0 8px 20px rgba(37, 211, 102, 0.15);
-}
-
-/* Footer */
-.footer {
-    margin-top: 30px;
-    padding-top: 20px;
-    border-top: 1px solid #f1f5f9;
-}
-
-.footer p {
-    font-size: 12px;
-    color: #94a3b8;
-    font-weight: 500;
-    line-height: 1.5;
-}
+</body>
+</html>
